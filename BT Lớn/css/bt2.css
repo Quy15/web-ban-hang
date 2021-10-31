@@ -1,0 +1,71 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: lightblue;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div.sub {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 15px 25px;
+    background: linear-gradient(darkblue,lightblue);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    margin-left: 3px;
+}
+
+header h1 {
+    color: red;
+    text-shadow: 2px 3px 3px darkred;
+}
+
+header h1 {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+section.works {
+    background-color: blue;
+}
+
+div.control {
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="text"], input[type="date"]{
+    width: 30%;
+}
+
+input[type="button"]{
+    background: linear-gradient(darkblue,lightblue);
+}
+

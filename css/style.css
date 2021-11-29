@@ -41,6 +41,49 @@ ul.menu > li > a:hover {
     border: 1px solid black;
     cursor: pointer;
 }
+
+nav > ul.menu2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    z-index: 9999;
+}
+
+ul.menu2 {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+ul.menu2 > li {
+    max-width: 200px;
+}
+
+ul.menu2 > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    color: white; 
+    background-color: black;
+}
+
+ul.menu2 > li > a:hover {
+    color: gold;
+}
+
+
+.subcontent2 {
+    display: none;
+}
+
+.sub2:hover .subcontent2 {
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    cursor: pointer;
+}
 /*.subcontent::after {
     content: " ";
     border-width: 20px;
@@ -71,8 +114,8 @@ div.item > div {
 }
 
 div.item {
-    border: 1px solid black;
-    border-radius: 20px;
+    /*border: 1px solid black;
+    border-radius: 20px;*/
     margin: 0.5%;
     width: 23%;
     background-color: white;
@@ -350,11 +393,13 @@ ul.tab > li > a {
 
 div.item3 {
     width: 50%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 div.item3  img {
-    width: 80%;
+    width: 75%;
+    margin-top: 40px;
+    padding: 0;
 }
 
 div.thumb {
@@ -362,8 +407,9 @@ div.thumb {
 }
 
 div.thumb > div {
-    width: 16.5%;
-    padding: 5px;
+    width: 16%;
+    padding: 0px;
+    margin: 0;
 }
 
 div.items3 {
@@ -371,7 +417,7 @@ div.items3 {
 }
 
 div.tit h1 {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 div.tit h2 {
@@ -387,24 +433,45 @@ a#totop {
     right: 15px;
     bottom:15px;
     z-index: 99;
+    width: 3%;
 }
 
-.pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
+div.detail {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: white !important;
+    font-size: 15px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    padding-top: 10%;
+    padding-left: 0;
+    border-radius: 20px 20px;
+    overflow: hidden;
+    transition: right 1s;
+}
+
+div.item:hover div.detail{
+   right: 0;
+   padding-left: 10%;
+   cursor: pointer;
+}
+
+
+div.item2:hover div.detail{
+    right: 0;
+    padding-left: 10%;
+    cursor: pointer;
+}
+
+a {
     text-decoration: none;
-    position: relative;
-    left: 350px;
-    bottom: 15px;
 }
-
-.active2 {
-    background-color: dodgerblue;
-    color: white;
-}
-
-.pagination a:hover {
-    background-color: gray;
+a > button.buybtn {
+    display:block;
+    padding: 0;
+    margin: 0;
+    background-color:gold;
     cursor: pointer;
 }

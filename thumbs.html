@@ -5,16 +5,19 @@
     <meta charset="utf-8">
     <link href="images/logo2.png" rel="shortcut icon"/>
     <link href="css/style.css" rel="stylesheet"/>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css" rel="stylesheet"/>
 </head>
-</head>
-<body onload="init()">
+<body>
     <nav>
         <ul class="menu">
             <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
@@ -37,11 +40,11 @@
         <div class="item3">
             <img src="images/astray red.jpg" id="mainImg" alt="astray red"/>
             <div class="thumb">
-                <div><img src="images/astray turn red.jpg" alt="1"/></div>
-                <div><img src="images/astray red.jpg" alt="2"/></div>
-                <div><img src="images/astray red.jpg" alt="3"/></div>
-                <div><img src="images/astray red.jpg" alt="4"/></div>
-                <div><img src="images/astray red.jpg" alt="5"/></div>
+                <div><img src="images/thumb1.jpg" alt="1" onclick="changeImg('one')" id="one"/></div>
+                <div><img src="images/thumb2.jpg" alt="2"  onclick="changeImg('two')" id="two"/></div>
+                <div><img src="images/thumb3.jpg" alt="3"  onclick="changeImg('three')" id="three"/></div>
+                <div><img src="images/thumb4.jpg" alt="4"  onclick="changeImg('four')" id="four"/></div>
+                <div><img src="images/thumb5.jpg" alt="5"  onclick="changeImg('five')" id="five"/></div>
             </div>
         </div>
         <div class="tit">
